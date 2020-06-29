@@ -1,0 +1,195 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 185px;
+}
+
+.header__img {
+    max-width: 100%;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 167px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 0;
+    margin: 0;
+}
+
+.header__item {
+    margin-right: 49px;
+    transition: 0.3s;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__item:hover {
+    color: #061e37;
+}
+
+.header__sign-up {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    min-width: 80px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__text {
+    max-width: 583px;
+}
+
+.header__title {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 7px;
+    margin-bottom: 7px;
+    margin-top: -16px;
+}
+
+.header__subtitle {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 31px;
+}
+
+.header__button-group {
+    display: flex;
+}
+
+.header__buy-now {
+    display: block;
+    margin-right: 30px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #061e37;
+    border: none;
+    min-width: 150px;
+    height: 55px;
+    cursor: pointer;
+    outline: none;
+}
+
+.header__try-for-free {
+    display: block;
+    color: #061e37;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #ffffff;
+    min-width: 160px;
+    outline: none;
+    cursor: pointer;
+    height: 55px;
+}
+
+.header__video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__video-bg {
+    max-width: 100%;
+}
+
+.header__play-button {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #061e37;
+    border: none;
+    outline: none;
+	cursor: pointer;
+	top: 36%;
+}
+
+.header__play-button::after {
+    content: 'Watch the video';
+    position: absolute;
+    width: 110px;
+    color: #061e37;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: 81px;
+    left: -24px;
+}
